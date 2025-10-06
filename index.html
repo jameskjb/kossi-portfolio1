@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kossi (James) Afidegnon — Systems & Network Engineer</title>
+  <meta name="description" content="Professional portfolio of Kossi (James) Afidegnon — Systems & Network Engineer and Cybersecurity Enthusiast (Suricata IDS/IPS, Cisco, Linux, Wireshark).">
+  <meta name="keywords" content="Systems Engineer, Network Engineer, Cybersecurity, IDS, IPS, Suricata, Cisco, CCNA, VLAN, DHCP, DNS, Wireshark, Linux, Windows Server, Packet Tracer, Virtualization, VMware, VirtualBox, Python">
+  <style>
+    :root{
+      --bg:#0e1016;
+      --surface:#121521;
+      --card:#171c2c;
+      --muted:#cdd6f4;
+      --text:#e8ecff;
+      --accent:#2b85ff;
+      --accent-2:#a78bfa;
+      --ring: rgba(43,133,255,.35);
+      --ok:#34d399;
+      --chip:#1c2340;
+      --border: rgba(255,255,255,.08);
+    }
+    :root[data-theme="light"]{
+      --bg:#f7f9fc;
+      --surface:#ffffff;
+      --card:#ffffff;
+      --muted:#516079;
+      --text:#131826;
+      --accent:#2143e3;
+      --accent-2:#6f48ff;
+      --ring: rgba(33,67,227,.18);
+      --ok:#059669;
+      --chip:#f1f4fb;
+      --border: rgba(2,6,23,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:radial-gradient(1400px 800px at 10% -10%, rgba(33,67,227,.08) 0%, rgba(33,67,227,0) 60%), var(--bg); color:var(--text); font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; line-height:1.65}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .hero{display:grid; gap:18px; grid-template-columns: 1fr; align-items:center; margin:8px 0 18px}
+    @media(min-width:900px){ .hero{grid-template-columns: 1.2fr .8fr} }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.08);
+    }
+    [data-theme="light"] .card{box-shadow:0 10px 30px rgba(2,6,23,.06)}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:1px solid var(--border);padding:8px 12px;border-radius:999px;color:var(--muted)}
+    [data-theme="light"] .badge{background:#f4f6fb}
+    h1{font-size:clamp(28px, 3.2vw, 42px); line-height:1.2; margin:0}
+    h2{font-size:clamp(20px, 2.2vw, 28px); margin:0 0 12px}
+    h3{margin:0 0 8px}
+    .subtitle{color:var(--muted); font-weight:500}
+    .stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+    .chip{background:var(--chip);border:1px solid var(--border);color:var(--muted);padding:6px 10px;border-radius:999px;font-size:.95rem}
+    .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--border);background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));color:var(--text);text-decoration:none;font-weight:600}
+    .btn:hover{box-shadow:0 0 0 3px var(--ring)}
+    .btn.primary{background:linear-gradient(180deg, rgba(43,133,255,.18), rgba(43,133,255,.06)); border-color: rgba(43,133,255,.35)}
+    .metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+    @media(min-width:700px){ .metrics{grid-template-columns:repeat(4,1fr)} }
+    .metric{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:12px;text-align:center}
+    .metric b{font-size:1.3rem}
+    .grid-2{display:grid; gap:16px}
+    @media(min-width:900px){ .grid-2{grid-template-columns:1.1fr .9fr} }
+    .projects{display:grid;grid-template-columns:1fr;gap:16px}
+    @media(min-width:900px){ .projects{grid-template-columns:1fr 1fr} }
+    .project{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:10px}
+    .project .meta{font-size:.94rem;color:var(--muted)}
+    .list{margin:0;padding-left:18px}
+    .list li{margin:6px 0}
+    footer{margin-top:28px;padding:20px 8px;text-align:center;color:var(--muted)}
+    .small{font-size:.92rem;color:var(--muted)}
+    .section{margin-top:18px}
+    .sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+    .topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    .switch{cursor:pointer;border:1px solid var(--border);border-radius:999px;padding:6px 10px}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Kossi (James) Afidegnon",
+    "jobTitle":"Systems & Network Engineer",
+    "email":"mailto:jamesafidegnon@gmail.com",
+    "telephone":"+15713430084",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Woodbridge",
+      "addressRegion":"VA",
+      "addressCountry":"US"
+    },
+    "knowsAbout":["Suricata IDS/IPS","Cisco networking","Wireshark","Linux","Windows Server","Virtualization","VLAN","DHCP","DNS","Packet analysis","Python"],
+    "alumniOf":{"@type":"CollegeOrUniversity","name":"IAI-Togo — Institut Africain d’Informatique"}
+  }
+  </script>
+</head>
+<body>
+  <a class="sr-only" href="#content">Skip to content</a>
+  <div class="container">
+    <div class="topbar">
+      <div class="badge" aria-label="Location and status">📍 Woodbridge, VA · Open to Roles</div>
+      <button id="themeToggle" class="switch" aria-label="Toggle theme">🌙 Theme</button>
+    </div>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Kossi (James) Afidegnon</h1>
+        <p class="subtitle">Systems &amp; Network Engineer · Cybersecurity Enthusiast (IDS/IPS, Wireshark, Cisco)</p>
+        <div class="stack" aria-label="Key Technologies">
+          <span class="chip">Cisco · CCNA</span><span class="chip">Suricata IDS/IPS</span><span class="chip">Linux (Ubuntu)</span>
+          <span class="chip">Windows Server</span><span class="chip">VLAN · DHCP · DNS</span><span class="chip">Wireshark</span>
+          <span class="chip">VirtualBox · VMware</span><span class="chip">Python (Beginner)</span>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="mailto:jamesafidegnon@gmail.com">Email Me</a>
+          <a class="btn" href="https://www.linkedin.com/in/kossi-james-afidegnon" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="tel:+15713430084">Call (571) 343-0084</a>
+        </div>
+        <div class="metrics" aria-label="Quick highlights">
+          <div class="metric"><b>Cyber</b><div>Suricata IDS/IPS</div></div>
+          <div class="metric"><b>Cisco</b><div>VLAN/DHCP/DNS</div></div>
+          <div class="metric"><b>Analysis</b><div>Wireshark</div></div>
+          <div class="metric"><b>Infra</b><div>Linux &amp; Windows</div></div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h2>About Me</h2>
+        <p>I design and secure IT infrastructures, configure networks, and troubleshoot systems to ensure reliability and protection. My goal is to grow as a cybersecurity professional in a team that values innovation, precision, and digital defense.</p>
+        <p class="small">📩 <a href="mailto:jamesafidegnon@gmail.com">jamesafidegnon@gmail.com</a> · ☎️ <a href="tel:+15713430084">(571) 343-0084</a></p>
+      </aside>
+    </section>
+
+    <main id="content" class="grid-2">
+      <section class="section">
+        <div class="card">
+          <h2>Selected Projects</h2>
+          <div class="projects">
+            <article class="project">
+              <h3>Optimization of the IT Asset Maintenance System — SALT (Lomé–Tokoin Airport Authority)</h3>
+              <p>Optimized processes for maintaining the airport authority’s computer fleet in Lomé, Togo. Contributions included documentation improvements, preventive maintenance planning, and coordination across stakeholders.</p>
+              <div class="meta"><strong>Environment:</strong> Enterprise IT · Asset Management · Process Optimization</div>
+              <ul class="list">
+                <li>Improved maintenance request clarity and tracking.</li>
+                <li>Helped reduce equipment downtime through better scheduling.</li>
+              </ul>
+            </article>
+
+            <article class="project">
+              <h3>Suricata-based Intrusion Detection &amp; Prevention (IDS/IPS)</h3>
+              <p>Implemented Suricata to monitor and protect network traffic for a U.S.-based company (name undisclosed). Focused on rule tuning, alert triage, and operational integration.</p>
+              <div class="meta"><strong>Stack:</strong> Suricata, Linux (Debian/Ubuntu), Email alerts</div>
+              <ul class="list">
+                <li>Configured IDS/IPS policies and tuned signatures to reduce noise.</li>
+                <li>Integrated alerting (email) to speed up incident response.</li>
+              </ul>
+            </article>
+
+            <article class="project">
+              <h3>🔐 Network Security Lab (Kali Linux &amp; Wireshark)</h3>
+              <p>Built a virtual lab to detect and analyze vulnerabilities. Gained hands-on practice with packet capture, protocol analysis, and basic penetration testing workflows.</p>
+              <div class="meta"><strong>Tools:</strong> Kali Linux, Wireshark, VirtualBox</div>
+            </article>
+
+            <article class="project">
+              <h3>🖥️ Enterprise LAN Configuration</h3>
+              <p>Designed a secure LAN with DHCP, DNS, and file sharing. Emphasized IP addressing plans, VLAN segmentation, and access control.</p>
+              <div class="meta"><strong>Tools:</strong> Cisco Packet Tracer, Windows Server</div>
+            </article>
+
+            <article class="project">
+              <h3>☁️ Server Deployment &amp; Management</h3>
+              <p>Deployed a Linux server for file and web hosting. Managed user access, permissions, and backups to maintain uptime and integrity.</p>
+              <div class="meta"><strong>Tools:</strong> Ubuntu, Apache, SSH</div>
+            </article>
+
+            <article class="project">
+              <h3>🧩 Network Troubleshooting</h3>
+              <p>Diagnosed routing and connectivity issues in a simulated enterprise environment. Strengthened analytical thinking and teamwork.</p>
+              <div class="meta"><strong>Tools:</strong> Cisco Packet Tracer, Windows, Linux</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <aside class="section">
+        <div class="card">
+          <h2>Core Skills</h2>
+          <div class="stack">
+            <span class="chip">Routing &amp; Switching (Cisco)</span>
+            <span class="chip">VLANs, DHCP, DNS</span>
+            <span class="chip">Linux &amp; Windows Server</span>
+            <span class="chip">Wireshark &amp; Packet Analysis</span>
+            <span class="chip">Virtualization (VMware, VirtualBox)</span>
+            <span class="chip">Troubleshooting &amp; IT Support</span>
+            <span class="chip">Python (Beginner)</span>
+          </div>
+        </div>
+
+        <div class="card section">
+          <h2>Certifications</h2>
+          <ul class="list">
+            <li><strong>Cisco CCNA 1</strong> — 2022</li>
+            <li><strong>Cisco CCNA 2</strong> — 2023</li>
+          </ul>
+        </div>
+
+        <div class="card section">
+          <h2>Education</h2>
+          <p><strong>IAI-Togo — Institut Africain d’Informatique</strong><br/>
+          Bachelor’s in Network &amp; Systems Administration (Oct 2021 – Aug 2024)<br/>
+          Grade: 15/20 · Activities: Basketball Team, Cooking Club</p>
+          <p class="small"><strong>Bachelor’s Thesis:</strong> Intrusion Detection &amp; Prevention with <em>Suricata</em> (IDS/IPS).</p>
+        </div>
+
+        <div class="card section">
+          <h2>Contact</h2>
+          <p>📩 <a href="mailto:jamesafidegnon@gmail.com">jamesafidegnon@gmail.com</a><br/>
+          🔗 <a href="https://www.linkedin.com/in/kossi-james-afidegnon" target="_blank" rel="noopener">linkedin.com/in/kossi-james-afidegnon</a><br/>
+          ☎️ <a href="tel:+15713430084">(571) 343-0084</a></p>
+        </div>
+      </aside>
+    </main>
+
+    <section class="card section">
+      <h2>Keywords (ATS)</h2>
+      <p class="small">Cisco, CCNA, VLAN, DHCP, DNS, Routing, Switching, LAN, TCP/IP, Wireshark, Packet Analysis, Suricata, IDS, IPS, Linux, Ubuntu, Windows Server, Virtualization, VMware, VirtualBox, Bash, Python, Troubleshooting, Cybersecurity, Network Security, ACLs</p>
+    </section>
+
+    <footer>
+      © 2025 Kossi (James) Afidegnon
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const saved = localStorage.getItem('theme');
+      if(saved){
+        document.documentElement.setAttribute('data-theme', saved);
+      } else if(window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches){
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+      const btn = document.getElementById('themeToggle');
+      btn.addEventListener('click', function(){
+        const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', current);
+        localStorage.setItem('theme', current);
+        btn.textContent = (current === 'light' ? '🌙 Theme' : '☀️ Theme');
+      });
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      document.getElementById('themeToggle').textContent = (current === 'light' ? '🌙 Theme' : '☀️ Theme');
+    })();
+  </script>
+</body>
+</html>
